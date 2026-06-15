@@ -7,9 +7,10 @@ export default function About({ content }: { content: any }) {
         <h2 className="text-4xl font-bold text-white mb-4">
           {content.heading}
         </h2>
-        <p className="text-yellow-400 font-semibold text-lg mb-6">
-          {content.subheading}
-        </p>
+       <p 
+  className="text-yellow-400 font-semibold text-lg mb-6"
+  dangerouslySetInnerHTML={{ __html: content.subheading }}
+/>
         <p className="text-gray-300 leading-relaxed">
           {content.description}
         </p>

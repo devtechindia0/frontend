@@ -15,6 +15,7 @@ const montserrat = Montserrat({
 export const metadata: Metadata = {
   title: "Techindia Software",
   description: "We are a Software Company",
+  robots: process.env.NEXT_PUBLIC_ROBOTS || 'index, follow',
 };
 
 export default function RootLayout({
